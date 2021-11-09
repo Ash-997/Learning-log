@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+<style>
+.hh{
+font-family: monospace;
+}
+.hh input{
+}
+.hh label{
+display: none;
+font-size: 20px;
+font-style:cursive;
+
+}
+.dsa label{
+display: none;
+
+}
+
+</style>
+<div style="display: flex; justify-content: center;">
+<div style="border:1px solid black; padding:20px; width:30%;">
+<form  class="hhh" method="post" action="{% url 'users:login' %}">
+    {% csrf_token %}
+    <div class="hh">
+        <h3 style="    font-size: 19px;
+    font-family: serif;">Enter name</h3>
+        {{ form.username|as_crispy_field }}
+  </div>
+  <div class="dsa">
+      <h3 style="font-size: 19px;font-family: serif;">Enter password</h3>
+    {{ form.password|as_crispy_field }}
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+    <input type="hidden" name="next" value="{% url 'learn:index' %}"/>
+
+</form>
+</div>
+</div>
+
+{% endblock content %}

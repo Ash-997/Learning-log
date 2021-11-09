@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<style>
+body{
+
+  background-color: #495057;
+
+    }
+</style>
+
+<div style="display: flex; justify-content: center " >
+<div style="width:51%; border:1px solid black; padding:20px; background-color: white;" >
+<form  action="{% url 'users:register'  %}" method="post">
+{% csrf_token %}
+  <div>
+    {{ form.username|as_crispy_field }}
+  </div>
+    <div>
+    {{ form.password1|as_crispy_field }}
+  </div>
+    <div>
+    {{ form.password2|as_crispy_field }}
+  </div>
+
+<button style="cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    background-color: #000000bd;
+    color: white" name="submit">Register</button>
+
+</form>
+</div>
+</div>
+
+
+{% endblock content %}
+
+
+
+

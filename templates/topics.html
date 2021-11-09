@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content%}
+<style>
+    .kol{
+    background-color: lightblue;
+    font-style: oblique;
+    font-size: x-large;
+    margin-bottom: 36px;
+
+    }
+
+
+</style>
+<div class="asd">
+<h1 class="ashish">Topics : </h1>
+    </div>
+<ul class="ac">
+    {%for topic in topics%}
+
+    <li class="da">
+        <a class="ax" href="{% url 'learn:topic1' topic.id %}">{{ topic }}</a>
+    </li>
+
+
+    {%empty%}
+    <li class="kol" >no topics have been added yet.</li>
+    {% endfor %}
+</ul>
+<a class="addtopic" href="{% url 'learn:new_topic' %}">Add a new topic:</a >
+
+
+{%endblock content%}

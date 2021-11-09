@@ -1,0 +1,46 @@
+.top{
+    background-color: #d39e005c;
+    padding: 30px;
+    font-family: monospace;
+    font-size: 49px;
+    font-variant: small-caps;
+
+}
+.ent{
+    background-color: bisque;
+    font-family: monospace;
+    font-size: x-large;
+    padding: 20px
+}
+.newEbtn{
+    background-color: rgb(130 207 177 / 50%);
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    margin-left: 12px;
+
+}
+.time{
+    background-color: #efefef;
+    color: black;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+
+
+.entr text{
+    background-color: bisque;
+    color: black;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+.addent{
+  background-color: dimgrey;
+    padding: 5px;
+    color: white;
+    border-radius: 12px
+}
+
+
+

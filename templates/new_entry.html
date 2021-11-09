@@ -1,0 +1,49 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<style>
+    .mki{
+    background-color: lightblue;
+    font-size: xx-large;
+    font-family: fantasy;
+    font-size: -webkit-xxx-large;;
+
+    }
+    .guh{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    background-color: #000000bd;
+    color: white;
+
+
+    }
+
+
+
+</style>
+<div style="margin-left:10px">
+<p class="mki"><a style="color:black;" href="{% url 'learn:topic1' topic.id %}">Topic :  {{topic}}</a></p>
+<p style="    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: emoji;
+    font-style: italic;
+    font-size: x-large">Add a new entry:</p>
+<div style="width:30%;">
+<form action="{% url 'learn:new_entry'  topic.id %}" method="post">
+    {% csrf_token %}
+    <div>
+        {{ form.text|as_crispy_field }}
+
+    </div>
+    <button class="guh" name="submit">Add Entry</button>
+
+
+</form>
+</div>
+    </div>
+{% endblock content %}
+

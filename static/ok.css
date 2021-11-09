@@ -1,0 +1,43 @@
+.ashish{
+background-color:#d9d9ad;
+color:#312c2c;
+font-family: emoji;
+margin-left:10px;
+height: 82px;
+}
+.ac{
+list-style-type:none;
+margin-left:0px;
+width:30%;
+
+}
+
+.da{
+padding:20px;
+background-color:lightgray;
+border-bottom:1px solid black;
+margin-bottom:30px
+
+
+}
+.ax{
+    font-size: x-large;
+    color: currentcolor;
+    font-family: -webkit-body;
+    font-variant-caps: petite-caps;
+
+
+}
+.asd{
+background-color:#d9d9ad;
+
+}
+.addtopic{
+border: 1px solid black;
+    padding: 20px;
+    background-color: #d9d9ad;
+    color: black;
+    font-variant: petite-caps;
+    font-size: x-large;
+    margin-left: 40px;
+}

@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<style>
+    .bhn{
+    background-color: black;
+    color: white;
+    border-radius: 11px;
+    width: 140px;
+
+
+
+    }
+
+
+
+</style>
+
+
+<p style="margin-left:10px;     margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: xx-large;
+    background-color: lightsalmon;">Add new topic :</p>
+<div style="width: 30%; margin-left: 10px">
+<form action="{% url 'learn:new_topic'%}" method="post">
+    {% csrf_token %}
+    <div>
+        {{form.text|as_crispy_field}}
+    </div>
+    <button class="bhn" name = "submit">add topic</button>
+</form>
+</div>
+
+{% endblock content %}

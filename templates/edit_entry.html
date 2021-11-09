@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+<style>
+    .bin{
+    background-color: #d39e005c;
+    padding: 30px;
+    font-family: monospace;
+    font-size: 49px;
+    font-variant: small-caps;
+    }
+    .vcb{
+
+    background-color: #212529cc;
+    padding: 15px;
+    color: white;
+    }
+    .btna{
+        background-color: #4d68dd;
+    width: 13rem;
+    color: white;
+    border: none;
+
+
+
+    }
+</style>
+
+<p class="bin"><a style="color:black" href="{% url 'learn:topic1' topic.id %}">Topic: {{topic}}</a>  </p>
+<p class="vcb">Edit entry:</p>
+
+<form action="{%url 'learn:edit_entry' entry.id %}" method="post">
+    {% csrf_token %}
+    <div style="width:40%; margin-left:10px;">
+        {{form.text|as_crispy_field}}
+    </div>
+    <button class="btna" name="submit">save changes</button>
+</form>
+
+
+
+{% endblock content %}
