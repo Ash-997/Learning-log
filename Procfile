@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT learning_log.wsgi:applicationgit addd
+web: waitress-serve --port=$PORT learning_log.wsgi:application
