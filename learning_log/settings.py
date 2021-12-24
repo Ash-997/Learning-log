@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'learning_log.urls'
 
 TEMPLATES = [
     {
-        'ENGINE': 'django.db.backends.postgresql',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
