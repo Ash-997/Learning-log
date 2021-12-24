@@ -57,7 +57,7 @@ ROOT_URLCONF = 'learning_log.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'ENGINE': 'django.db.backends.postgresql',
         'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
