@@ -79,3 +79,8 @@ def edit_entry(request, entry_id):
             return HttpResponseRedirect(reverse('learn:topic1',args=[topic.id]))
     context = {'entry': entry, 'topic': topic, 'form': form}
     return render(request, 'edit_entry.html', context)
+
+
+@login_required()
+def del_top(request,del_id):
+   return render(request,'demo.html')

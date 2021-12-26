@@ -10,23 +10,28 @@
     }
 
 
+
 </style>
 <div class="asd">
-<h1 class="ashish">Topics : </h1>
-    </div>
+    <h1 class="ashish">Topics : </h1>
+</div>
 <ul class="ac">
     {%for topic in topics%}
 
     <li class="da">
         <a class="ax" href="{% url 'learn:topic1' topic.id %}">{{ topic }}</a>
+
+    </li>
+    <li>
+        <a href="{% url 'learn:ash' topic.id %}"> del</a>
     </li>
 
 
     {%empty%}
-    <li class="kol" >no topics have been added yet.</li>
+    <li class="kol">no topics have been added yet.</li>
     {% endfor %}
 </ul>
-<a class="addtopic" href="{% url 'learn:new_topic' %}">Add a new topic:</a >
+<a class="addtopic" href="{% url 'learn:new_topic' %}">Add a new topic:</a>
 
 
 {%endblock content%}
