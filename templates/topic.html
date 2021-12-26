@@ -23,6 +23,7 @@
 <p>
     <a class="addent" href="{% url 'learn:edit_entry' entry.id %}"> Edit_entry</a>
 </p>
+        <a href="{% url 'learn:del_ent' entry.id  entry.topic %}"></a>
 
     </li>
 {% empty %}
