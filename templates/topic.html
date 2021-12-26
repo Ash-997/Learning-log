@@ -9,6 +9,16 @@
     margin-bottom: 36px;
     }
 
+    .del_en
+    {
+    background-color: #b72929;
+    padding: 5px;
+    color: white;
+    border-radius: 12px
+
+
+    }
+
 </style>
 <p class="top">Topic: {{ topics }}</p>
 <p class="ent">Entries:</p>
@@ -23,7 +33,7 @@
 <p>
     <a class="addent" href="{% url 'learn:edit_entry' entry.id %}"> Edit_entry</a>
 </p>
-        <a href="{% url 'learn:del_ent' entry.id  entry.topic.id %}">delete entry</a>
+        <a class="del_en" href="{% url 'learn:del_ent' entry.id  entry.topic.id %}">delete entry</a>
 
     </li>
 {% empty %}
