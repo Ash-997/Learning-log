@@ -84,6 +84,6 @@ def edit_entry(request, entry_id):
 @login_required()
 def del_top(request,del_id):
     ac = Topic.objects.filter(id=del_id).delete()
-    #return HttpResponseRedirect("topics")
-    return render(request,'topics.html')
+    return HttpResponseRedirect("/topics/")
+   # return render(request,'topics.html')
    #return render(request,'demo.html')
