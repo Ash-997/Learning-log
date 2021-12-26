@@ -91,5 +91,5 @@ def del_top(request,del_id):
 @login_required()
 def delent(request,delent_id,topi_id):
     ac = Entry.objects.filter(id=delent_id).delete()
-    return HttpResponseRedirect(reverse('learn:topic', args=[topi_id]))
+    return HttpResponseRedirect(reverse('learn:topic1', args=[topi_id]))
 
