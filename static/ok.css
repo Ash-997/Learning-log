@@ -13,8 +13,8 @@ width:30%;
 }
 
 .da{
-padding:20px;
-background-color:lightgray;
+padding: 6px;
+background-color: #d9d9ad57;
 border-bottom:1px solid black;
 margin-bottom:30px;
 margin-top: 18px;
@@ -41,4 +41,10 @@ border: 1px solid black;
     font-variant: petite-caps;
     font-size: x-large;
     margin-left: 40px;
+}
+
+.addtop{
+background-color: #d9d9ad;
+
+
 }
