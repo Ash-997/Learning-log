@@ -21,11 +21,12 @@
 
 }
 .time{
+    margin-top: 50px;
     background-color: #efefef;
     color: black;
     border-bottom: 1px solid;
     padding: 10px;
-    margin-top: 50px;
+
 }
 
 

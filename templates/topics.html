@@ -8,6 +8,12 @@
     margin-bottom: 36px;
 
     }
+    .edit_btn{
+    background-color: #b72929;
+    padding: 5px;
+    color: white;
+    border-radius: 12px
+   }
 
 
 
@@ -23,7 +29,7 @@
 
     </li>
     <li>
-        <a href="{% url 'learn:deltopic' topic.id %}"> delete topic</a>
+        <a class="edit_btn" href="{% url 'learn:deltopic' topic.id %}"> delete topic</a>
     </li>
 
 
